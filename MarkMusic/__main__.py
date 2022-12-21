@@ -24,7 +24,7 @@ async def init():
         and not config.STRING5
     ):
         LOGGER("MarkMusic").error(
-            "No Assistant Clients Vars Defined!.. Exiting Process."
+            "WTF Baby ! Atleast add a pyrogram string, How Cheap..."
         )
         return
     if (
@@ -32,7 +32,7 @@ async def init():
         and not config.SPOTIFY_CLIENT_SECRET
     ):
         LOGGER("MarkMusic").warning(
-            "No Spotify Vars defined. Your bot won't be able to play spotify queries."
+            "Spotify Client Id & Secret not added, Chutiya Saala ek itni simple cheej nahi laa paaya."
         )
     try:
         users = await get_gbanned()
@@ -46,27 +46,27 @@ async def init():
     await app.start()
     for all_module in ALL_MODULES:
         importlib.import_module("MarkMusic.plugins" + all_module)
-    LOGGER("Markmusic.plugins").info(
-        "Successfully Imported Modules "
+    LOGGER("MarkMusic.plugins").info(
+        "Necessary Modules Imported Successfully."
     )
     await userbot.start()
     await Mark.start()
     try:
         await Mark.stream_call(
-            "http://docs.evostream.com/sample_content/assets/sintel1m720p.mp4"
+            "https://telegra.ph/file/8d5db123638c2f6bb6ce4.mp4"
         )
     except NoActiveGroupCall:
         LOGGER("MarkMusic").error(
-            "[ERROR] - \n\nPlease turn on your Logger Group's Voice Call. Make sure you never close/end voice call in your log group"
+            "[ERROR] - \n\nHey , firstly open telegram and turn on voice chat in Logger Group else fu*k off. If you ever ended voice chat in log group i will stop working and users will fu*k you up."
         )
         sys.exit()
     except:
         pass
     await Mark.decorators()
-    LOGGER("MarkMusic").info("Mark Music Bot Started Successfully")
+    LOGGER("MarkMusic").info("Music Bot Started Successfully, Now Give your girlfriend chumt to @MARRK_85")
     await idle()
 
 
 if __name__ == "__main__":
     loop.run_until_complete(init())
-    LOGGER("MarkMusic").info("Stopping Mark Music Bot! GoodBye")
+    LOGGER("MarkMusic").info("Stopping Music Bot, Bhakk Bhosdike (Gaand Maraa Tu)")
