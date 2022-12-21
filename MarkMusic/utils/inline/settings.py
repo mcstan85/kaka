@@ -26,7 +26,7 @@ def setting_markup(_):
                 text=_["ST_B_7"], callback_data="CM"
             ),
             InlineKeyboardButton(
-                text=_"•ɢʀᴏᴜᴩ•", url=f"{config.SUPPORT_GROUP}"
+                text="•ɢʀᴏᴜᴩ•", url=f"{config.SUPPORT_GROUP}"
             ),
         ],
         [
