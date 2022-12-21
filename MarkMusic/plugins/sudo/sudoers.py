@@ -1,7 +1,7 @@
 from pyrogram import filters
 from pyrogram.types import Message
 
-from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID
+from config import BANNED_USERS, MONGO_DB_URI, OWNER_ID, MUSIC_BOT_NAME
 from strings import get_command
 from MarkMusic import app
 from MarkMusic.misc import SUDOERS
