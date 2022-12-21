@@ -18,7 +18,7 @@ BOT_TOKEN = getenv("BOT_TOKEN")
 SUPPORT_CHANNEL = getenv(
     "SUPPORT_CHANNEL", "https://t.me/marrkmusic")
 SUPPORT_GROUP = getenv(
-    "SUPPORT_GROUP", "https://t.me/craxymarrk")
+    "SUPPORT_GROUP", "https://t.me/moonx_music_bot")
 
 # Database to save your chats and stats... Get MongoDB:-  https://telegra.ph/How-To-get-Mongodb-URI-04-06
 MONGO_DB_URI = getenv("MONGO_DB_URI", None)
@@ -143,7 +143,7 @@ autoclean = []
 
 
 # Images
-START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/3d0319657fb2b3553e16b.jpg")
+START_IMG_URL = getenv("START_IMG_URL", "https://te.legra.ph/file/a23629a8c471ce4d8c22f.jpg")
 
 PING_IMG_URL = getenv(
     "PING_IMG_URL",
